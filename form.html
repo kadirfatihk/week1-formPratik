@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>Example</h2>
+
+    <form>
+        <fieldset>
+            <legend>Kişisel</legend>
+            <div>
+                <label for="fullName">İsim ve Soyisim:</label>
+                <input type="text" id="fullName">
+            </div>
+            <div>
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" value="male"> Erkek
+                <input type="radio" name="gender" value="female"> Kadın
+            </div>
+            <div>
+                <label for="birthday">Doğum Tarihi:</label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="city">Şehir:</label>
+                <select id="name">
+                    <option value="">Seçiniz</option>
+                    <optgroup label="Marmara">
+                        <option value="istanbul">İstanbul</option>
+                        <option value="sakarya">Sakarya</option>
+                        <option value="edirne">Edirne</option>
+                    </optgroup>
+                    <optgroup label="Güneydoğu">
+                        <option value="şanlıurfa">Şanlıurfa</option>
+                        <option value="diyarbakır">Diyarbakır</option>
+                        <option value="gaziantep">Gaziantep</option>
+                    </optgroup>
+                    <optgroup label="Karadeniz">
+                        <option value="samsun">Samsun</option>
+                        <option value="amasya">Amasya</option>
+                        <option value="sinop">Sinop</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Hobiler:</label>
+                <input type="checkbox" name="hobbies[]" value="sport"> Spor
+                <input type="checkbox" name="hobbies[]" value="music"> Müzik
+                <input type="checkbox" name="hobbies[]" value="read"> Okuma
+            </div>
+            <div>
+                <label for="cv">Özgeçmiş:</label>
+                <input type="file" id="cv">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>İletişim</legend>
+            <div>
+                <label for="email">E-Posta:</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone">
+            </div>
+            <div>
+                <label for="address">Adres:</label>
+                <textarea id="address"></textarea>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password">
+        </div>
+
+        <div>
+            <button type="submit">Kayıt Ol</button>
+            <button type="reset">Temizle</button>
+        </div>
+    </form>
+
+    <h2>HTML Input Types</h2>
+    <h3>Input Type Color</h3>
+    <input type="color">
+    <h3>Input Type Number</h3>
+    <input type="number">
+    <h3>Input Type Range</h3>
+    <input type="range" value="54">
+    <h3>Input Type Time</h3>
+    <input type="time">
+</body>
+</html>
